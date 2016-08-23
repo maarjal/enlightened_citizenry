@@ -1,0 +1,8 @@
+<h3>Find bills that are coming up for votes in the House in the next week</h3>
+<form>
+  <select onChange={{action "upcomingBills" value="event.target.value"}}>
+    <option value={{house}}>House</option>
+    <option value="senate">Senate</option>
+  </select>
+  <button {{action 'upcomingBills'}} class="btn btn-success">Search</button>
+</form>

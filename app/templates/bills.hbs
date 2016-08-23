@@ -1,1 +1,6 @@
-{{bill-detail bill=model}}
+<ul>
+  <h2>Recent Bills</h2>
+  {{#each model as |bill|}}
+    <li>{{bill.number}}: {{#link-to "bill" bill.bill_id}}{{bill.official_title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
