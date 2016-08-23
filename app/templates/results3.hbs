@@ -1,0 +1,6 @@
+<ul>
+  <h2>Recent Bills</h2>
+  {{#each model as |bills|}}
+    <li>{{bills.official_title}} {{bills.number}}</li>
+  {{/each}}
+</ul>

@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('results', {path: "/results/:zipcode"});
   this.route('results2');
+  this.route('results3');
 });
 
 export default Router;

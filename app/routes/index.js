@@ -7,6 +7,9 @@ export default Ember.Route.extend ({
     },
     committeeLookup() {
       this.transitionTo('results2');
+    },
+    billsLookup() {
+      this.transitionTo('results3');
     }
   }
 });
