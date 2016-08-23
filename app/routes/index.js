@@ -11,7 +11,7 @@ export default Ember.Route.extend ({
     billsLookup() {
       this.transitionTo('bills');
     },
-    upcomingBills() {
+    upcomingBills(value) {
       this.transitionTo('upcoming-bills');
     }
   }
