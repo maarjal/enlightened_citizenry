@@ -1,0 +1,9 @@
+<h1>Legislator Lookup</h1>
+
+<form class="form-group">
+  <div>
+    <label for="zipcode">Zipcode</label>
+    {{input value=zipcode id="zipcode"}}
+  </div>
+  <button {{action "zipcodeLookup"}} class="btn btn-primary">Submit</button>
+</form>
