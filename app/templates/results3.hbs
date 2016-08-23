@@ -1,6 +1,6 @@
 <ul>
   <h2>Recent Bills</h2>
   {{#each model as |bills|}}
-    <li>{{bills.official_title}} {{bills.number}}</li>
+    <li>{{bills.number}}: {{#link-to "bills" bills.id}}{{bills.official_title}}{{/link-to}}</li>
   {{/each}}
 </ul>

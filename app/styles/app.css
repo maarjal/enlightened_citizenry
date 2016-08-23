@@ -1,0 +1,20 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav p {
+  margin: 3%;
+}
+
+button {
+  margin-top: 2%;
+}
