@@ -1,8 +1,10 @@
+import config from '../config/environment';
 import Ember from 'ember';
 
 export default Ember.Route.extend ({
   model: function() {
-    var url = "http://congress.api.sunlightfoundation.com/committees/?apikey=b88f167fdac34860bf4220a9d104ec29&per_page=all&subcommittee=false";
+    var key = config.myApiKey;
+    var url = "http://congress.api.sunlightfoundation.com/committees/?apikey=" + key + "&per_page=all&subcommittee=false";
     return Ember.$.getJSON(url).then(function(responseJSON) {
       return responseJSON.results;
     });
